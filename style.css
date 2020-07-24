@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+:root {
+  --txt: 17px;
+  --txt-h: 25px;
+  --medium-h: 30px;
+  --large-h: 40px;
+}
+.hide {
+  /* pointer-events: none; */
+  display: none;
+  width: 0;
+}
+.WorkMain {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.WorkMain h2 {
+  text-align: center;
+  margin: 20px auto;
+}
+.toggle-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.toggle-button button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 3px black;
+  background: #e0dd2493;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.toggle-button button:hover,
+.toggle-button .active {
+  background: #e40825ce;
+  color: #fff;
+  box-shadow: 0 0 10px black;
+}
+.WorkSection {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 10px !important;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+.mywork {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.slide {
+  min-width: 100%;
+}
+.appWork,
+.webWork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.72),
+      rgba(0, 0, 0, 0.58),
+      rgba(0, 0, 0, 0.18)
+    ),
+    url(b.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  height: 70vh;
+}
+.slide:nth-of-type(1) .appWork {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.72),
+      rgba(0, 0, 0, 0.58),
+      rgba(0, 0, 0, 0.18)
+    ),
+    url(https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60);
+}
+.slide:nth-of-type(2) .webWork {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.72),
+      rgba(0, 0, 0, 0.58),
+      rgba(0, 0, 0, 0.18)
+    ),
+    url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+}
+.slide:nth-of-type(3) .appWork {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.72),
+      rgba(0, 0, 0, 0.58),
+      rgba(0, 0, 0, 0.18)
+    ),
+    url(https://images.unsplash.com/photo-1573339887617-d674bc961c31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+}
+.slide:nth-of-type(4) .webWork {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.72),
+      rgba(0, 0, 0, 0.58),
+      rgba(0, 0, 0, 0.18)
+    ),
+    url(https://images.unsplash.com/photo-1504387103978-e4ee71416c38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+}
+
+.appWork .appSS,
+.webWork .webSS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+}
+.webWork .webSS {
+  flex: 0 0 55%;
+  max-width: 55%;
+}
+.appWork .appSS img {
+  max-width: 40%;
+  vertical-align: middle;
+  border-style: none;
+}
+.webWork .webSS img {
+  max-width: 100%;
+  margin-left: 20px;
+  vertical-align: middle;
+  border-style: none;
+}
+.appWork .appContent,
+.webWork .webContent {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+}
+.webWork .webContent {
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+.appWork .appContent h2,
+.webWork .webContent h2 {
+  font-size: var(--medium-h);
+  font-weight: 500;
+  color: #fff;
+  text-align: start;
+}
+.webWork .webContent h2 {
+  margin: 20px;
+}
+.appWork .appContent p,
+.webWork .webContent p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--txt);
+  line-height: 28px;
+  margin: 30px 0;
+  margin-right: 30px;
+  color: #fff;
+}
+.webWork .webContent p {
+  margin: 20px;
+}
+.appContent .button {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.webContent .button {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.button a {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: rgba(224, 36, 67, 0.575);
+  box-shadow: 0 0 10px black;
+  transition: all 0.5s;
+}
+.button a:hover {
+  box-shadow: 0 0 3px black;
+}
+.slide-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+#next-btn,
+#prev-btn {
+  cursor: pointer;
+  background: transparent;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  color: #e40825ce;
+  position: absolute;
+}
+
+#next-btn {
+  right: 50px;
+}
+#prev-btn {
+  left: 50px;
+}
+#next-btn:focus,
+#prev-btn:focus {
+  outline: none;
+}
+@media (max-width: 800px) {
+  .toggle-button {
+    margin-bottom: 20px;
+  }
+  .toggle-button button {
+    margin: 10px;
+    padding: 5px 10px;
+  }
+
+  .appWork,
+  .webWork {
+    height: 75vh;
+  }
+  .appWork .appSS,
+  .webWork .webSS {
+    flex: none;
+    max-width: 100%;
+  }
+  .appWork .appContent,
+  .webWork .webContent {
+    flex: none;
+    max-width: 100%;
+  }
+  .appWork .appSS img {
+    max-width: 35%;
+  }
+  .webWork .webSS img {
+    max-width: 95%;
+    margin: 0;
+  }
+  .appWork .appContent h2,
+  .webWork .webContent h2 {
+    font-size: 25px;
+    margin: 10px;
+  text-align: center;
+  }
+  .appWork .appContent p,
+  .webWork .webContent p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 10px;
+    line-height: 20px;
+  }
+  .appContent .button,
+  .webContent .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    margin-bottom: 10px !important;
+  }
+  .button a {
+    margin: 10px;
+    padding: 5px 10px;
+  }
+
+  #next-btn,
+  #prev-btn {
+    padding: 20px 0;
+  }
+  #next-btn {
+    right: 10px;
+  }
+  #prev-btn {
+    left: 10px;
+  }
+}
