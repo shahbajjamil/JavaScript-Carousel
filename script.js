@@ -29,7 +29,7 @@ appWork.addEventListener("click", () => {
   //     "https://github.com/shahbajjamil",
   //   ],
   //   [
-  //     "WhatsApp-UI-Clone",
+  //     "WhatsApp-UI-2",
   //     "whatsapp3.gif",
   //     "Just simple UI clone of WhatsApp, This app is build with flutter.",
   //     "#getapplink",
@@ -40,7 +40,7 @@ appWork.addEventListener("click", () => {
   // myworkBuild.innerHTML = "";
   // for (let i = 0; i < appData.length; i++) {
   //   myworkBuild.innerHTML +=
-  //     '<div class="slide"><div class="appWork"><div class="appSS">' +
+  //     '<div class="slide app"><div class="appWork"><div class="appSS">' +
   //     '<img src='+appData[i][1]+' />' +
   //     '</div><div class="appContent">' +
   //     "<h2>"+appData[i][0]+"</h2>" +
@@ -59,7 +59,7 @@ webWork.addEventListener("click", () => {
   // myworkBuild.innerHTML = "";
   // for (let i = 0; i < 3; i++) {
   //   myworkBuild.innerHTML +=
-  //     '<div class="slide"><div class="webWork"><div class="webSS">' +
+  //     '<div class="slide web"><div class="webWork"><div class="webSS">' +
   //     '<img src="dell.png" />' +
   //     '</div><div class="webContent">' +
   //     "<h2>Ramadan Mubarak</h2>" +
@@ -73,7 +73,7 @@ webWork.addEventListener("click", () => {
 });
 // for (let i = 0; i < 2; i++) {
 //     myworkBuild.innerHTML +=
-//       '<div class="slide"><div class="webWork"><div class="webSS">' +
+//       '<div class="slide web"><div class="webWork"><div class="webSS">' +
 //       '<img src="dell.png" />' +
 //       '</div><div class="webContent">' +
 //       "<h2>Ramadan Mubarak</h2>" +
