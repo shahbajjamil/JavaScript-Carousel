@@ -18,10 +18,12 @@
   --medium-h: 30px;
   --large-h: 40px;
 }
-.hide {
-  /* pointer-events: none; */
-  display: none;
-  width: 0;
+.visible {
+  display: block
+}
+
+.hidden {
+  display: none
 }
 .WorkMain {
   width: 100%;
